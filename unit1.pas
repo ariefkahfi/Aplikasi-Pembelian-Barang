@@ -73,8 +73,8 @@ begin
    Val(Edit2.Text , Harga , Kode);
    Val(Edit3.Text , Banyak, Kode);
    Jumlah:= Harga * Banyak;
-   if RadioButton1.Checked then;
-       Disc:= 0.1 * Jumlah;
+   if RadioButton1.Checked then
+       Disc:= 0.1 * Jumlah
    else
        Disc:=0;
        Bersih:= Jumlah - Disc;
@@ -96,8 +96,8 @@ begin
    Val(Edit2.Text , Harga , Kode);
    Val(Edit3.Text , Banyak, Kode);
    Jumlah:= Harga * Banyak;
-   if RadioButton1.Checked then;
-      Disc:= 0.1 * Jumlah;
+   if RadioButton1.Checked then
+      Disc:= 0.1 * Jumlah
    else
       Disc:=0;
       Bersih:= Jumlah - Disc;
