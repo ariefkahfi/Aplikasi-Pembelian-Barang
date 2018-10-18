@@ -64,13 +64,49 @@ begin
 end;
 
 procedure TForm1.RadioButton1Change(Sender: TObject);
+var
+   SJumlah, SDisc, SBersih: String[30];
+   Harga,Banyak, Jumlah: Single;
+   Disc,Bersih: Single;
+   Kode: Integer;
 begin
-
+   Val(Edit2.Text , Harga , Kode);
+   Val(Edit3.Text , Banyak, Kode);
+   Jumlah:= Harga * Banyak;
+   if RadioButton1.Checked then;
+       Disc:= 0.1 * Jumlah;
+   else
+       Disc:=0;
+       Bersih:= Jumlah - Disc;
+       Str(Jumlah:20:0,SJumlah);
+       Str(Disc:20:0,SDisc);
+       Str(Bersih:20:0, SBersih);
+       Edit4.Text:= SJumlah;
+       Edit5.Text:= SDisc;
+       Edit6.Text:= SBersih;
 end;
 
 procedure TForm1.RadioButton2Change(Sender: TObject);
+var
+   SJumlah, SDisc, SBersih: String[30];
+   Harga,Banyak, Jumlah: Single;
+   Disc,Bersih: Single;
+   Kode: Integer;
 begin
-
+   Val(Edit2.Text , Harga , Kode);
+   Val(Edit3.Text , Banyak, Kode);
+   Jumlah:= Harga * Banyak;
+   if RadioButton1.Checked then;
+      Disc:= 0.1 * Jumlah;
+   else
+      Disc:=0;
+      Bersih:= Jumlah - Disc;
+      Str(Jumlah:20:0,SJumlah);
+      Str(Disc:20:0,SDisc);
+      Str(Bersih:20:0, SBersih);
+      Edit4.Text:= SJumlah;
+      Edit5.Text:= SDisc;
+      Edit6.Text:= SBersih;
 end;
 
 procedure TForm1.Edit2Change(Sender: TObject);
@@ -94,7 +130,11 @@ end;
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-
+     Edit1.Text:= '';
+     Edit2.Text:= '';
+     Edit3.Text:= '';
+     Edit4.Text:= '';
+     Edit1.SetFocus;
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);
