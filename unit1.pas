@@ -139,12 +139,26 @@ end;
 
 procedure TForm1.Button2Click(Sender: TObject);
 begin
-
+  Application.Terminate;
 end;
 
 procedure TForm1.Edit3Change(Sender: TObject);
+var
+  sJmlh, sDisc, sBersih: String[30];
+  harga, banyak, jumlah, disc, bersih: Single;
+  kode: Integer;
 begin
-
+  val(Edit2.Text,harga,kode);
+  val(Edit3.Text,banyak,kode);
+  jumlah:=harga*banyak;
+  if RadioButton1.Checked then disc:=0.1*jumlah else disc:=0;
+  bersih:=jumlah-disc;
+  str(jumlah:20:0, sJmlh);
+  str(disc:20:0, sDisc);
+  str(bersih:20:0, sBersih);
+  Edit4.Text := sJmlh;
+  Edit5.Text := sDisc;
+  Edit6.Text := sBersih;
 end;
 
 end.

@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 477
+  Left = 173
   Height = 383
-  Top = 156
+  Top = 167
   Width = 604
   Caption = 'Form1'
   ClientHeight = 383
@@ -132,12 +132,12 @@ object Form1: TForm1
     ChildSizing.ShrinkVertical = crsScaleChilds
     ChildSizing.Layout = cclLeftToRightThenTopToBottom
     ChildSizing.ControlsPerLine = 1
-    ClientHeight = 166
+    ClientHeight = 162
     ClientWidth = 101
     TabOrder = 8
     object RadioButton1: TRadioButton
       Left = 6
-      Height = 83
+      Height = 81
       Top = 0
       Width = 89
       Caption = 'Ya'
@@ -147,8 +147,8 @@ object Form1: TForm1
     end
     object RadioButton2: TRadioButton
       Left = 6
-      Height = 83
-      Top = 83
+      Height = 81
+      Top = 81
       Width = 89
       Caption = 'Tidak'
       OnChange = RadioButton2Change
