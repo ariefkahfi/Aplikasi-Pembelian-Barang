@@ -6,6 +6,7 @@ object Form1: TForm1
   Caption = 'Form1'
   ClientHeight = 288
   ClientWidth = 504
+  OnCreate = FormCreate
   LCLVersion = '1.8.4.0'
   object Label1: TLabel
     Left = 24
@@ -51,6 +52,7 @@ object Form1: TForm1
     Height = 32
     Top = 64
     Width = 208
+    OnChange = Edit2Change
     TabOrder = 1
   end
   object Edit3: TEdit

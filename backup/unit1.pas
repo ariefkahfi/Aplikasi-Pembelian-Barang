@@ -22,6 +22,8 @@ type
     Label2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
+    procedure Edit2Change(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
 
   public
@@ -34,6 +36,22 @@ var
 implementation
 
 {$R *.lfm}
+
+{ TForm1 }
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  Edit4.Enabled:=False;
+  Edit4.Color:=clBtnFace;
+end;
+
+procedure TForm1.Edit2Change(Sender: TObject);
+var
+  SJmlh: String[30];
+
+begin
+
+end;
 
 end.
 
